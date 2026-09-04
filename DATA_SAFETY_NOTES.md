@@ -1,6 +1,6 @@
 # Data Safety Notes — for filling in the Google Play Console
 
-**Written:** July 22, 2026. This file summarises, in plain language, what the published
+**Written:** July 22, 2026. **Updated:** September 4, 2026. This file summarises, in plain language, what the published
 legal documents (privacy.html, terms.html, delete-account.html) declare — so you can fill
 in the Play Console **Data Safety form** from this page without re-reading the legal text.
 The form's answers must match these documents; if you change one, change the other.
@@ -16,6 +16,8 @@ The form's answers must match these documents; if you change one, change the oth
 | Photos | Profile photo, progress photos, food/meal photos, barcode scans (via camera or storage permission) | Yes | No |
 | AI coach messages | Text the user types to the AI coach, and the AI's replies | Yes | No |
 | Device/app identifiers | Push notification token (needed to deliver notifications via Expo) | Yes | No |
+| Food catalogue contributions (opt-in) | Food name, portion sizes, nutrition values created by user | Yes (linked to account until review, then de-identified; deleted upon account deletion) | No |
+| Search quality telemetry (opt-in) | Unmatched search queries and occurrence counts (k-anonymity thresholded; scrambled fingerprints below threshold; no account ID, date, time, or order) | No | No |
 
 - **Nothing is used for tracking or advertising.** No ads, no ad networks, no data sold. Answer "No" to all tracking questions.
 - **No financial or payment data is collected. See section 5 — this matters.**
