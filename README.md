@@ -2,7 +2,7 @@
 
 Lightweight static HTML/CSS. There is no runtime JavaScript, bundler or production dependency installation. The four stable URLs are `index.html`, `privacy.html`, `terms.html` and `delete-account.html`; `CNAME` remains `vanoa.app`.
 
-**Unpublished draft, not submission-ready.** The visible warning and `noindex, nofollow` metadata are intentional. The review version is not an effective policy date. This repository does not certify legal compliance or store approval. No deployment or remote change is part of preparing these files.
+**Review candidate, not a compliance certification.** The prominent yellow review banner has been removed at the owner's request. Review-version labels, policy text, dates and `noindex, nofollow` metadata remain unchanged. The review version is not an effective policy date. No deployment or remote change is part of preparing these files.
 
 ## Local preview
 
@@ -22,7 +22,7 @@ No-dependency static checks:
 python tests/check-site.py
 ```
 
-This checks the four pages, local assets/links/fragments, preserved deep links, shared review version, draft warnings, contact consistency, absence of scripts/embeds/forms, and hosting exclusions. It does not prove the legal accuracy of text or a live deletion workflow.
+This checks the four pages, local assets/links/fragments, preserved deep links, shared review version, absence of the removed banner, retained version disclosure, contact consistency, absence of scripts/embeds/forms, and hosting exclusions. It does not prove the legal accuracy of text or a live deletion workflow.
 
 Optional browser, accessibility and HTML validation uses Playwright, axe-core and html-validate installed **outside** the site. Set:
 
