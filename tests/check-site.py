@@ -9,8 +9,8 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ['index.html', 'privacy.html', 'terms.html', 'delete-account.html']
-# Pages approved for publication. Must match the app's lib/consent.ts PRIVACY_VERSION (2026-10-04).
-PUBLISHED = {'privacy.html'}
+# Pages approved for publication. Must match the app's lib/consent.ts TERMS_VERSION and PRIVACY_VERSION (2026-10-04).
+PUBLISHED = {'index.html', 'privacy.html', 'terms.html', 'delete-account.html'}
 LEGACY = {
     'privacy.html': 'toc infocollect healthconnect infouse legalbases whoshare ai intltransfers inforetain infosafe infominors privacyrights DNT uslaws policyupdates contact request'.split(),
     'terms.html': 'agreement services ip userreps userreg purchases subscriptions software prohibited ugc license reviews mobile sitemanage ppno terms modifications law disputes corrections disclaimer liability indemnification userdata electronic california misc contact'.split(),
