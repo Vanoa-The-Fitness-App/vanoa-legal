@@ -46,6 +46,8 @@ for name, page in pages.items():
         if count != 1: errors.append(f'{name}: duplicate ID {id}')
     for id in LEGACY.get(name, []):
         if id not in page.ids: errors.append(f'{name}: missing preserved anchor {id}')
+    if 'class="draft-banner"' in source or 'Unpublished review draft · not yet in effect' in text:
+        errors.append(f'{name}: removed review banner has returned')
     if name in PUBLISHED:
         # Published documents carry an effective date and no draft wording.
         if 'Unpublished review draft' in text or 'not yet in effect' in text: errors.append(f'{name}: published page still shows draft status')
@@ -53,7 +55,8 @@ for name, page in pages.items():
         if page.metas.get('version') != '2026-10-04': errors.append(f'{name}: inconsistent version')
         if page.metas.get('robots'): errors.append(f'{name}: published page must not be noindex')
     else:
-        if 'Unpublished review draft' not in text or 'No effective date' not in text: errors.append(f'{name}: missing draft warning')
+        if 'Review version' not in text or 'Not an effective policy date' not in text:
+            errors.append(f'{name}: review version disclosure missing')
         if page.metas.get('version') != 'review-2026-10-04': errors.append(f'{name}: inconsistent version')
     for needle in ['[[', '{{', '[Developer/Company name]', 'Vanoa Pro', 'Vanoa LLC', 'Vanoa Inc', 'Vanoa Ltd', 'Google-approved', 'Apple-approved']:
         if needle in source: errors.append(f'{name}: forbidden placeholder/claim {needle}')
