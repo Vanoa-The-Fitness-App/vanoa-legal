@@ -1,0 +1,8 @@
+# Local Python tooling artifacts
+__pycache__/
+*.pyc
+
+# Keep temporary test captures/results outside the served tree.
+test-results/
+playwright-report/
+node_modules/
