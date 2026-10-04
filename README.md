@@ -1,8 +1,8 @@
-# Vanoa legal website — review candidate
+# Vanoa legal website
 
 Lightweight static HTML/CSS. There is no runtime JavaScript, bundler or production dependency installation. The four stable URLs are `index.html`, `privacy.html`, `terms.html` and `delete-account.html`; `CNAME` remains `vanoa.app`.
 
-**Review candidate, not a compliance certification.** The prominent yellow review banner has been removed at the owner's request. Review-version labels, policy text, dates and `noindex, nofollow` metadata remain unchanged. The review version is not an effective policy date. No deployment or remote change is part of preparing these files.
+**Published documents, effective 4 October 2026.** All four pages carry `meta version 2026-10-04`, which must match `TERMS_VERSION` and `PRIVACY_VERSION` in the app's `lib/consent.ts` and the accepted versions in the `record-legal-consent` Edge Function. Merging to `main` deploys to `vanoa.app` via GitHub Pages. This repository does not certify legal compliance.
 
 ## Local preview
 
@@ -22,7 +22,7 @@ No-dependency static checks:
 python tests/check-site.py
 ```
 
-This checks the four pages, local assets/links/fragments, preserved deep links, shared review version, absence of the removed banner, retained version disclosure, contact consistency, absence of scripts/embeds/forms, and hosting exclusions. It does not prove the legal accuracy of text or a live deletion workflow.
+This checks the four pages, local assets/links/fragments, preserved deep links, the shared published version and effective date, absence of draft wording, banner and `noindex`, contact consistency, absence of scripts/embeds/forms, and hosting exclusions. It does not prove the legal accuracy of text or a live deletion workflow.
 
 Optional browser, accessibility and HTML validation uses Playwright, axe-core and html-validate installed **outside** the site. Set:
 
@@ -49,6 +49,6 @@ The script checks HTML; JavaScript-disabled rendering at 320, 390, 768 and 1440 
 - Do not add real-account screenshots, identifying metadata, production infrastructure evidence or detailed security findings.
 - `DATA_SAFETY_NOTES.md`, `HEALTH_CONNECT_NOTES.md` and `APPLE_PRIVACY_NOTES.md` are separate sanitized review mappings, not submitted store answers.
 
-## Publication is a separate, gated task
+## Changing a published document
 
-Only after operator/legal, engineering, provider and release approvals: assign an effective date, coordinate app/backend consent versions and notices, approve actual deletion/retention commitments, confirm all store mappings, remove draft/noindex treatment where appropriate, and independently verify the eventual HTTPS deployment. A local preview is not production verification. Commits, pushes, PRs and merges remain user-managed.
+When a change is material: update the effective/last-updated dates and `meta version` on every affected page, bump the matching app consent version so users re-accept, add the new version to the `record-legal-consent` allow-list before releasing the app, and keep the text consistent with the app's actual behaviour.
