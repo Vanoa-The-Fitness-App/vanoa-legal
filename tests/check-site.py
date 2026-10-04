@@ -9,6 +9,8 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ['index.html', 'privacy.html', 'terms.html', 'delete-account.html']
+# Pages approved for publication. Must match the app's lib/consent.ts PRIVACY_VERSION (2026-10-04).
+PUBLISHED = {'privacy.html'}
 LEGACY = {
     'privacy.html': 'toc infocollect healthconnect infouse legalbases whoshare ai intltransfers inforetain infosafe infominors privacyrights DNT uslaws policyupdates contact request'.split(),
     'terms.html': 'agreement services ip userreps userreg purchases subscriptions software prohibited ugc license reviews mobile sitemanage ppno terms modifications law disputes corrections disclaimer liability indemnification userdata electronic california misc contact'.split(),
@@ -46,9 +48,16 @@ for name, page in pages.items():
         if id not in page.ids: errors.append(f'{name}: missing preserved anchor {id}')
     if 'class="draft-banner"' in source or 'Unpublished review draft · not yet in effect' in text:
         errors.append(f'{name}: removed review banner has returned')
-    if 'Review version' not in text or 'Not an effective policy date' not in text:
-        errors.append(f'{name}: review version disclosure missing')
-    if page.metas.get('version') != 'review-2026-10-04': errors.append(f'{name}: inconsistent version')
+    if name in PUBLISHED:
+        # Published documents carry an effective date and no draft wording.
+        if 'Unpublished review draft' in text or 'not yet in effect' in text: errors.append(f'{name}: published page still shows draft status')
+        if 'Effective date: 4 October 2026' not in text: errors.append(f'{name}: missing effective date')
+        if page.metas.get('version') != '2026-10-04': errors.append(f'{name}: inconsistent version')
+        if page.metas.get('robots'): errors.append(f'{name}: published page must not be noindex')
+    else:
+        if 'Review version' not in text or 'Not an effective policy date' not in text:
+            errors.append(f'{name}: review version disclosure missing')
+        if page.metas.get('version') != 'review-2026-10-04': errors.append(f'{name}: inconsistent version')
     for needle in ['[[', '{{', '[Developer/Company name]', 'Vanoa Pro', 'Vanoa LLC', 'Vanoa Inc', 'Vanoa Ltd', 'Google-approved', 'Apple-approved']:
         if needle in source: errors.append(f'{name}: forbidden placeholder/claim {needle}')
     for tag, attr, url in page.urls:
