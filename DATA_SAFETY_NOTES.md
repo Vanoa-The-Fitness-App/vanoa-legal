@@ -1,6 +1,6 @@
 # Data Safety Notes — for filling in the Google Play Console
 
-**Written:** July 22, 2026. **Updated:** October 3, 2026 (policy rewrite after Play rejection).
+**Written:** July 22, 2026. **Updated:** October 4, 2026 (restored effective policy; added Unsplash/Pexels, public avatar URL, time zone).
 This file summarises, in plain language, what the published legal documents (privacy.html,
 terms.html, delete-account.html) declare, so you can fill in the Play Console **Data Safety form**
 and **Health apps declaration** without re-reading the legal text.
@@ -17,7 +17,7 @@ The form's answers must match these documents; if you change one, change the oth
 | Health & fitness: health info, fitness info | Nutrition, workouts, water, sleep, steps, weight, supplements, fasting; Health Connect imports | Yes | Yes | No |
 | Location: approximate | Coarse location rounded to ~1 km + city label (food-search ranking) | Yes | Yes | No |
 | Financial info: purchase history | Vanoa Plus product, dates, store transaction IDs (no card data) | Yes | Yes | No |
-| Photos | Profile photo (stored); food/label scanner photos (processed ephemerally, not stored) | Yes | Yes | No |
+| Photos | Profile photo (stored; served from a public URL); food/label scanner photos (processed ephemerally, not stored by Vanoa) | Yes | Yes | No |
 | App activity: other user-generated content | Opt-in food catalogue contributions | Yes, until de-identified for review | Yes | No |
 | App activity: in-app search history | Opt-in unmatched-search telemetry (thresholded, no account ID/date) | No | Yes | No |
 
@@ -37,6 +37,7 @@ The form's answers must match these documents; if you change one, change the oth
 | **RevenueCat** | Account ID, store purchase records | Purchase validation and subscription status |
 | **Cloudflare Turnstile** | IP, browser/device signals | Bot protection on sign-in and sensitive actions |
 | **Expo (EAS Update)** | IP, platform, app version | App updates |
+| **Unsplash / Pexels** | IP when a hotlinked stock image loads (not linked to account) | Stock pictures in the app |
 | **Open Food Facts** | Scanned barcode number, IP (not linked to account) | Product lookup |
 | **Vercel** | Email sign-in link, IP | Hosts the web page that completes email sign-in links |
 | **GitHub Pages** | IP of site visitors | Hosts vanoa.app |

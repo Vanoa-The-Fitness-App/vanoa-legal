@@ -1,0 +1,5 @@
+# GitHub Pages: keep repository notes and tooling off vanoa.app.
+exclude:
+  - DATA_SAFETY_NOTES.md
+  - CLAUDE.md
+  - .claude
