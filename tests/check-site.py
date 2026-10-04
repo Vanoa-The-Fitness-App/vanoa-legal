@@ -44,7 +44,10 @@ for name, page in pages.items():
         if count != 1: errors.append(f'{name}: duplicate ID {id}')
     for id in LEGACY.get(name, []):
         if id not in page.ids: errors.append(f'{name}: missing preserved anchor {id}')
-    if 'Unpublished review draft' not in text or 'No effective date' not in text: errors.append(f'{name}: missing draft warning')
+    if 'class="draft-banner"' in source or 'Unpublished review draft · not yet in effect' in text:
+        errors.append(f'{name}: removed review banner has returned')
+    if 'Review version' not in text or 'Not an effective policy date' not in text:
+        errors.append(f'{name}: review version disclosure missing')
     if page.metas.get('version') != 'review-2026-10-04': errors.append(f'{name}: inconsistent version')
     for needle in ['[[', '{{', '[Developer/Company name]', 'Vanoa Pro', 'Vanoa LLC', 'Vanoa Inc', 'Vanoa Ltd', 'Google-approved', 'Apple-approved']:
         if needle in source: errors.append(f'{name}: forbidden placeholder/claim {needle}')
