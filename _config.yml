@@ -1,10 +1,5 @@
-# Candidate GitHub Pages settings. No deployment is performed by this repository change.
+# GitHub Pages: keep repository notes and tooling off vanoa.app.
 exclude:
   - DATA_SAFETY_NOTES.md
-  - APPLE_PRIVACY_NOTES.md
-  - HEALTH_CONNECT_NOTES.md
-  - README.md
   - CLAUDE.md
-  - AGENTS.md
-  - tests
   - .claude

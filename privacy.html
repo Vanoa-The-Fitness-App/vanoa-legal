@@ -1,170 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="What Vanoa processes, why it is used, and the choices you have.">
-  <meta name="version" content="review-2026-10-04">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="referrer" content="no-referrer">
-  <meta name="color-scheme" content="light dark">
-  <title>Privacy Policy — Vanoa</title>
-  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="version" content="2026-10-03">
+<title>Vanoa — Privacy Policy</title>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="wrap">
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Vanoa home"><svg viewBox="0 0 224 75" aria-hidden="true" focusable="false"><g class="brand-mark" transform="translate(-31 -44.6) scale(.85)" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M155,68 L113,68 C110,68 109.3,68.6 108,71 C104,80 102,96 99,110 C96,124 94,130 91.5,130 C88.5,130 87,124 84,112 C80,98 79,90 72,90 L40,90"></path><path d="M140,56 L140,81"></path></g><text class="wordmark" x="73" y="72" font-size="66">anoa</text></svg></a>
-      <nav class="header-nav" aria-label="Primary"><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete-account.html">Delete Account</a></nav>
-    </header>
-    <main id="main" tabindex="-1">
-<header class="document-head"><p class="eyebrow">Vanoa / Legal &amp; privacy</p><h1>Privacy Policy</h1><p class="lede">What Vanoa processes, why it is used, and the choices you have.</p><p class="doc-meta"><span>Review version: 4 October 2026</span><span>Effective date: not assigned</span></p></header><aside class="draft-banner" aria-label="Draft status"><strong>Unpublished review draft · not yet in effect</strong>These candidate documents are not submission-ready. Material operator-identity, consent, retention and deletion requirements remain unresolved. No effective date has been assigned.</aside><div class="document-layout"><aside class="contents" aria-label="On this page"><h2 id="toc">On this page</h2><ol><li><a href="#scope">Scope &amp; contact</a></li><li><a href="#infocollect">Information we process</a></li><li><a href="#healthconnect">Health Connect</a></li><li><a href="#ai">AI image scanning</a></li><li><a href="#infouse">Purposes &amp; choices</a></li><li><a href="#whoshare">Providers &amp; recipients</a></li><li><a href="#intltransfers">Storage &amp; transfers</a></li><li><a href="#inforetain">Retention &amp; deletion</a></li><li><a href="#infosafe">Security</a></li><li><a href="#infominors">Age eligibility</a></li><li><a href="#privacyrights">Your rights</a></li><li><a href="#website">This website</a></li><li><a href="#policyupdates">Changes</a></li></ol><a class="return-home" href="index.html">← All documents</a></aside><article class="prose" aria-label="Privacy Policy"><section id="scope">
-<h2>1. Scope and contact</h2>
-<p>Vanoa is a health and fitness app operated by independent developers, not an incorporated company. In this notice, “we”, “us” and “our” refer to those developers. This notice covers the Vanoa Android app, its related account services, and this website. It does not describe an available iOS release or an active Apple HealthKit connection.</p>
-<p>For privacy questions or a request about your information, use <a href="mailto:support@vanoa.app">support@vanoa.app</a>. This is the contact used in Vanoa’s existing app and website. Do not send passwords, authentication codes or unnecessary health details.</p>
-<p class="small">This is a review draft based on the inspected implementation. The responsible controller/contracting-party disclosures, operational request handling and release-specific practices still require approval. Calling the product “Vanoa” does not resolve those requirements.</p>
-</section>
-<section id="infocollect">
-<h2>2. Information we process</h2>
-<p>Information is associated with your Vanoa account where it is saved to that account. Some features also keep copies or settings on your device. Optional means you can choose not to use the feature; it does not mean information already collected is automatically erased when you stop using it.</p>
-<h3>Accounts, profile and setup</h3>
-<p>Account services process your email address, account identifier, authentication credentials, verification and recovery requests, sessions, and any enrolled multi-factor authentication. Google sign-in supplies identity/profile information through the sign-in process; Vanoa does not receive your Google password. Supabase Auth handles credentials rather than storing a readable password in your fitness profile.</p>
-<p>Profile and setup information includes your display name, optional bio and profile photo, date of birth, height, weight, formula/sex selection, body measurements, activity and dietary preferences, training choices, sleep schedule, goals, and app settings. Account access and certain setup inputs are needed for the corresponding app experience; a profile photo, bio and individual logging features are optional. Legal-document acceptance, age attestation and optional-feature choices are also recorded. Account-linked scan-usage counters, export-attempt records, recovery/security quotas and subscription event records support access limits, security and service operation.</p>
-<h3>Health, fitness and derived information</h3>
-<p>When you enter, save or import records, Vanoa processes nutrition and meal details, energy and nutrients, custom foods and recipes, water intake, steps, sleep timing, duration, notes and stages, weight and body measurements, workouts, exercises, sets, routines, programmes, personal records, fasting, and medicine or supplement names, labels, schedules, taken/skipped records and stock. Records can include dates, times, quantities, units, notes and their source.</p>
-<p>Vanoa uses these records and profile inputs to calculate goals, calorie estimates, scores, progress, weight trends and related insights. These are derived health or fitness information, not medical determinations. The underlying records and saved results can be stored in your cloud account and local caches. Some calculations are displayed without being saved.</p>
-<h3>Photos and scanning</h3>
-<p>You can choose or capture a profile photo for upload to account storage. The current avatar design uses a public storage bucket and publicly addressable image URL; do not use an avatar for confidential documents or health records. Optional food and label scans send images for processing as explained in <a href="#ai">AI image scanning</a>. A barcode is read using the camera and its number is used for product lookup.</p>
-<h3>Optional location</h3>
-<p>Regional food suggestions can use a one-time, low-accuracy device location reading or a place you type. Vanoa rounds a new location result to two decimal places before reverse-geocoding and saving it with a place label in local preferences and your cloud setup record. The device location service supplies the original reading; a place you type is sent to the platform geocoder. Typed labels are not necessarily coarse: a street address can remain identifying even beside rounded coordinates. This is not continuous location tracking. Android configuration requests coarse, not fine or background, location access.</p>
-<p>Your device’s time-zone name is separately sent to the backend for date/time handling, independently of optional location permission.</p>
-<p>Location is off by default. You can decline device access, enter a place manually, or leave location disabled. Disabling the feature and erasing an already saved cloud location are distinct; contact us if you need an existing copy removed.</p>
-<h3>Searches, contributions and quality information</h3>
-<p>Online food and exercise searches send queries and filters to the backend. Barcode lookups send the barcode number to Open Food Facts. Search terms can reveal health interests even when they do not contain your name.</p>
-<p>Food catalogue contributions have a separate, off-by-default choice. If enabled, authored food or recipe names, portions and nutrition values are submitted to improve the shared catalogue. Submissions are account-linked while managed and may be reviewed, corrected or combined into catalogue entries. Removing an account identifier is not a guarantee that content is anonymous.</p>
-<p>The app records local food-search/logging quality metrics, including unmatched queries, counts and interaction measurements. A separate quality-upload choice exists, but an active remote uploader has not been established for the inspected app. Turning off quality uploads does not prevent ordinary online searches. Historical backend quality records and their deletion are a separate retention question.</p>
-<h3>Vanoa Plus and technical information</h3>
-<p>When the subscription integration is configured, RevenueCat processes your Vanoa account identifier and customer/purchase state, including when no purchase has yet been made. Subscription processing includes products, transaction identifiers, status, purchase or renewal events, expiry, ownership and store environment. Google Play handles checkout payment instruments; Vanoa does not provide its own card-number, CVC or bank-account entry form.</p>
-<p>Network services receive request metadata such as IP address, headers and timing. Authentication protection uses Cloudflare Turnstile. Eligible app builds contact Expo for updates. These operational transfers are distinct from advertising. No initialized advertising or third-party crash-analytics integration was identified in the inspected first-party code; this is not an assurance that every provider receives no diagnostics or identifiers.</p>
-<h3>Reminders, exports and support</h3>
-<p>Reminders and sleep alarms are scheduled locally. Their content may reveal health or medicine information on your lock screen. You control notifications in Vanoa and your device settings. A remote push-token registration or delivery path has not been established in the inspected app.</p>
-<p>Exporting creates a downloadable/shareable copy of selected account data. You can also deliberately share supported workout or achievement summaries with recipients you choose. Files you save or send to another person or app are separate copies. Support requests contain the contact details, messages and attachments you choose to send, processed through the support mailbox and its service provider.</p>
-</section>
-<section id="healthconnect">
-<h2>3. Android Health Connect</h2>
-<p><strong>Health Connect is optional.</strong> It is Android’s on-device health data store, not a Vanoa cloud account, Google Fit account, Samsung Health account or Apple Health connection. Other apps may read or write records there under their own permissions.</p>
-<p>With the relevant permissions, Vanoa imports records into its fitness features and can write eligible manually logged records back to Health Connect. <strong>Imported Vanoa records are not all kept only on your phone:</strong> selected records, source identifiers and sleep stages can be saved to your account in Supabase and cached locally.</p>
-<section class="table-scroll" aria-label="Health Connect access table" tabindex="0">
-<table><caption>Access in the inspected Android implementation</caption><thead><tr><th scope="col">Record</th><th scope="col">Access</th><th scope="col">Feature and information used</th></tr></thead><tbody>
-<tr><th scope="row">Steps</th><td>Read and write</td><td>Step counts and time ranges support daily totals and progress. Vanoa subtracts its own exported totals and preserves manually logged steps when updating daily totals. Imported totals and weight-based estimated calories can be saved in Vanoa; eligible positive manual step entries can be written to Health Connect.</td></tr>
-<tr><th scope="row">Sleep sessions</th><td>Read and write</td><td>Session start/end and duration support sleep history. Regular duration is calculated from elapsed session time, not a sum excluding awake stages. Opening Sleep can separately read stages and save their names and timing to Vanoa’s cloud logs. Eligible manually captured sessions can be written without stage detail.</td></tr>
-<tr><th scope="row">Weight</th><td>Read and write</td><td>Weight and measurement time support weight history and trends. The latest selected measurement for a day can be saved if it passes validation, with manual entries taking precedence. Manual measurements can be written.</td></tr>
-<tr><th scope="row">Hydration</th><td>Read and write</td><td>Volume and time support water tracking. Imported water records can be saved; manually logged amounts can be written.</td></tr>
-<tr><th scope="row">Nutrition</th><td>Read and write</td><td>Food/meal information, time, energy, protein, carbohydrate, fat and fibre support nutrition logs. Writes can include other available nutrients. Supplement values mirrored into nutrition can be included.</td></tr>
-<tr><th scope="row">Exercise sessions</th><td>Read and write</td><td>Session timing, type and title support completed-workout history. Completed manual workouts can be written. This is not an exercise-route upload.</td></tr>
-<tr><th scope="row">Active calories burned</th><td>Write only</td><td>Positive stored calorie estimates can accompany eligible manual workout exports. Vanoa does not request read access to this record type in the inspected configuration.</td></tr>
-<tr><th scope="row">Heart rate and respiratory rate</th><td>Optional read only</td><td>Time-windowed samples support overnight sleep-detail summaries. Live summaries remain in the inspected screen’s local state; no upload of those live summaries was established. This does not establish the provenance of any historical cloud vital summaries.</td></tr>
-</tbody></table></section>
-<p>Native record reads can expose additional information in device memory, including record IDs, origin app, modification/device/recording metadata and time-zone offsets. Sleep records can include titles, notes and stages; nutrition records can include additional nutrients beyond the narrower cloud-import subset above; exercise records can include notes, laps and segments. No Vanoa exercise-route permission request or route upload was found. The table describes the fields used by the visible features and saved account records, not a guarantee that the native bridge returns only those fields.</p>
-<h3>How synchronization works</h3>
-<p>The native bridge reads permitted Health Connect records. Vanoa converts values into its logging units, aggregates certain daily values, and uses source record identifiers and saved sync progress to reduce duplicate imports. Initial synchronization looks back over a recent 30-day window; later sync uses saved progress and overlap. That lookback is a sync window, <strong>not a 30-day retention period</strong>.</p>
-<p>Synchronization is implemented around app startup and returning to the foreground, as well as user-triggered sync. The inspected configuration does not request extended-history access, special background health-read access or exercise-route access. Permission history limits and device availability can affect the records returned.</p>
-<p>Cloud copies support your logs, history, goals, scores and related fitness features. Supabase processes these copies for Vanoa. The inspected scanner payload does not take Health Connect records or your full health diary as an input to the AI image service. Subscription requests do not intentionally include the health diary. Those bounded findings do not remove the need to control provider logs, staff access or future data paths.</p>
-<h3>Permissions, cloud copies and your choices</h3>
-<p>The onboarding connection asks for a smaller read set; the full connection flow can request the read/write set above. The six metric rows in the app reflect permission status; they are not independent read-only and write-only controls. Regular synchronization currently requires all 13 core read/write permissions, even for an import-only or selected-metric run. Denying a core permission blocks regular sync as a whole. Both optional heart-rate and respiratory-rate permissions must be granted for either live overnight summary; they are not required for regular sync. Android Health Connect settings are the authority for the grants you allow. Manual logging and other non-connected features remain available.</p>
-<p>Disconnecting turns off Vanoa’s main synchronization connection. It does not erase existing local/cloud imports or records already written into Health Connect. The current separate Sleep-detail reader is not governed by that connection flag, and a sync operation already in progress can finish transferring data. To stop further permitted Health Connect access, revoke Vanoa’s permissions in Android’s Health Connect settings.</p>
-<p>Deleting a Vanoa log is not the same as deleting the source record in Health Connect. If a source record remains, a later sync can import it again. Account deletion does not itself erase records written by other apps, remove every Vanoa-authored Health Connect record, or revoke Android permissions. Manage those records and grants in Health Connect and, where relevant, the originating app. Other apps’ copies and your downloaded exports have their own deletion controls.</p>
-<div class="note"><p><strong>Restricted use and consent.</strong> The intended Health Connect use is the visible health and fitness functionality described here, not advertising, sale, credit or insurance eligibility, or unrelated model training. Actual transfers and human access must satisfy the Health Connect permissions and Limited Use restrictions; merely naming a cloud service provider does not establish that the transfer is permitted. An OS permission alone is not a separate authorization for every cloud or downstream use. The current cloud-transfer basis, prominent upload disclosure, minimum scopes, permitted human access and consent/withdrawal behaviour are unresolved release requirements. Any prohibited processing must be fixed or stopped; disclosure alone cannot authorize it.</p></div>
-</section>
-<section id="ai">
-<h2>4. AI image scanning</h2>
-<p>Optional scanning estimates meal nutrition and transcribes food or supplement labels. It is not a general AI coach or a service that independently starts workouts or changes your diary.</p>
-<p>A selected or captured image is resized into JPEG form and sent to an authenticated Supabase function. That function forwards the image and task instructions through OpenRouter to a model-serving provider. There are two implemented scanner handlers with different model fallback rules; a retried scan can reach more than one qualifying endpoint. A model’s brand/name does not identify the provider that actually served it. An image may incidentally contain a face, handwriting, packaging details, medicine information or other identifying content. Crop out unrelated details before submitting it.</p>
-<p>The returned estimates or transcription can become saved Vanoa records when you accept and save them. Check quantities, units, ingredients and label values yourself. You can avoid image processing and enter information manually.</p>
-<p>The server requests zero-data-retention provider routing. This is <strong>not an end-to-end guarantee of no retention or no training</strong> across temporary device files, infrastructure, request metadata, logging and every serving route. The active provider route and its applicable retention/training terms must be confirmed before publication. No universal claim that scanner images are “never stored” is made here.</p>
-</section>
-<section id="infouse">
-<h2>5. Purposes and choices</h2>
-<p>Vanoa uses information to provide account access, save and display your fitness history, calculate estimates and goals, operate the optional connections described above, schedule reminders, answer support requests, protect account access, and verify Vanoa Plus entitlements. Optional contributions support catalogue improvement. Online queries and local quality metrics are separate from an unverified remote quality-upload service.</p>
-<ul><li>Use device permissions for camera, selected photos, location, notifications and Health Connect access.</li><li>Use Profile → Privacy and Data for the separate contribution and quality-upload choices and account data tools.</li><li>Choose manual entry instead of image scanning, and manual logging instead of Health Connect.</li><li>Use app/device notification settings to limit reminders and lock-screen exposure.</li><li>Request access, correction, withdrawal or deletion using the contact and tools below.</li></ul>
-<h3 id="legalbases">Processing grounds</h3>
-<p>Optional access and feature choices do not provide blanket permission for unrelated uses. Where processing relies on consent, you can withdraw it; withdrawal does not retrospectively change processing already lawfully carried out. Account/service delivery, security, purchases and any necessary legal records must each have an applicable processing ground. Health information can require an additional sensitive-data condition.</p>
-<p class="small">Purpose-specific processing grounds, sensitive-data consent and international-transfer arrangements remain subject to UAE and other applicable law review. This draft does not assume that accepting the Terms or an OS permission satisfies all of those requirements.</p>
-</section>
-<section id="whoshare">
-<h2>6. Providers and recipients</h2>
-<p>Feature choices and release configuration determine which of these services process information. A provider’s own obligations and retention are distinct from Vanoa’s account-deletion process.</p>
+<body style="max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+
+<h1>PRIVACY POLICY</h1>
+<p><strong>Last updated:</strong> October 4, 2026</p>
+
+<h2>INTRODUCTION</h2>
+<p>This Privacy Notice for Vanoa ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:</p>
 <ul>
-<li><strong>Supabase:</strong> authentication, account/profile and fitness cloud records, storage, server functions, searches, contributions, scanner requests, export and deletion operations. Authentication emails also involve its configured email-delivery service.</li>
-<li><strong>Google:</strong> optional Google sign-in and Google Play purchase processing. Health Connect’s on-device store is separate from these account/store services.</li>
-<li><strong>Cloudflare Turnstile:</strong> browser, device and network signals for bot protection in guarded authentication flows.</li>
-<li><strong>OpenRouter and its selected model-serving provider:</strong> the image/task processing described above, not a verified provider-independent no-retention service.</li>
-<li><strong>RevenueCat:</strong> configured customer identity, purchases and entitlement management, together with Google Play and Vanoa’s verification backend.</li>
-<li><strong>Open Food Facts:</strong> barcode product lookup and associated network request metadata.</li>
-<li><strong>Unsplash and Pexels image services:</strong> requests for stock images used by app content, conveying network metadata and image identifiers.</li>
-<li><strong>Platform location/geocoding services:</strong> optional device location and typed-place resolution before Vanoa stores rounded preferences.</li>
-<li><strong>Expo/EAS Update:</strong> update checks and downloads in eligible builds, including build/runtime and network request information.</li>
-<li><strong>Hosted authentication fallback:</strong> the existing web confirmation route is hosted on Vercel and handles sign-in links and web request metadata.</li>
-<li><strong>GitHub Pages and its delivery infrastructure:</strong> hosting of this legal website and visitor request metadata.</li>
-<li><strong>Support mailbox services and authorized operators:</strong> handling requests you send. The actual mail provider, access arrangements and retention need operational confirmation.</li>
+<li>Download and use our mobile application (Vanoa), or any other application of ours that links to this Privacy Notice</li>
+<li>Use Vanoa. We provide a fitness tracking platform that you can use to log workouts, monitor nutrition, and track your health progress.</li>
+<li>Contact us for support, or visit vanoa.app</li>
 </ul>
-<p>Authored food contributions can be reviewed and incorporated into a shared catalogue. Files or information you deliberately share using export tools go to the recipients you choose. Requests from authorities must be assessed under applicable law and, for restricted health information, the applicable platform restrictions; this is not a general permission to disclose your health history.</p>
-<p class="small">Provider contracts, exact automatic SDK fields, human-access restrictions, downstream recipients and permitted-use roles are not fully verified. “Service provider” in ordinary language is not automatically the same as Google Play’s specific sharing exemption.</p>
-</section>
-<section id="intltransfers">
-<h2>7. Storage and international processing</h2>
-<p>Vanoa maintains cloud account records and local device copies. Named Supabase project metadata identifies the primary project region as South Asia (Mumbai), India. This does not establish the destination of every released build or the locations of every authentication, storage, function, log, backup, replica or downstream-provider operation.</p>
-<p>Provider processing and operator access can involve countries other than your own. UAE governing law is not a statement that all information is stored in the UAE. The complete country map, applicable transfer safeguards and any health-data-specific hosting restrictions remain unresolved publication requirements; use of the app is not treated as blanket consent to every international transfer.</p>
-</section>
-<section id="inforetain">
-<h2>8. Retention and deletion</h2>
-<p>Account and fitness records support your saved history while you use the service. Individual-entry and account-deletion tools exist, but account lifetime alone is not a complete retention schedule. See <a href="delete-account.html">Delete Account</a> for the request routes and their limits.</p>
-<ul><li><strong>Account-owned records and profile images:</strong> targeted by account deletion; completion and full local cleanup still require release verification.</li><li><strong>Contributions and quality information:</strong> account-linked submissions, historical pseudonymous records and promoted catalogue outcomes have different deletion paths. Hashing or removing attribution does not prove irreversible anonymity.</li><li><strong>Purchase, security and operational records:</strong> not all are erased by the same account operation. Any justified retention needs a specific purpose, lawful ground and period.</li><li><strong>Backups, logs, support messages, caches and provider copies:</strong> actual expiry and deletion after a restore have not been established.</li><li><strong>Device files, exports, Health Connect and other apps:</strong> are separate copies; account deletion does not remotely erase every such copy.</li></ul>
-<div class="note"><p><strong>Retention schedule not yet approved.</strong> Verified category-specific completion periods and expiry criteria are still missing. This draft does not renew a general “within 30 days” deletion promise, an additional 30-day backup promise, or permission to retain information indefinitely. Missing periods and incomplete deletion are publication blockers, not lawful retention exceptions.</p></div>
-<p>Stopping synchronization, revoking permissions, clearing app data, uninstalling, deleting a record, deleting an account and cancelling a subscription have different effects. If a request fails or its result is uncertain, contact support rather than assuming every copy has been removed.</p>
-</section>
-<section id="infosafe">
-<h2>9. Security</h2>
-<p>The implementation uses authenticated server requests, configured HTTPS endpoints, database access-control mechanisms and protected native authentication-session storage. Ordinary local profile/health caches are distinct from protected session storage. Android configuration disables app backup, but that does not erase server backups or establish the behaviour of every distributed artifact.</p>
-<p>No system is perfectly secure. Vanoa does not claim end-to-end encryption, that all local caches are encrypted, that no human can access information, or that a successful request proves permanent erasure. Limit sensitive information in avatars, free-text fields, scans, notifications and support messages. Keep your device and authentication factors secure.</p>
-</section>
-<section id="infominors">
-<h2>10. Age eligibility</h2>
-<p>The existing signup policy is for adults aged 18 or over who have the legal capacity to use the service and grant any optional contribution licence. It is not a guardian-consent service for children. An age attestation is not proof of a person’s age. The current Google sign-in path can record one without a fresh age-checkbox action, so the adult-only statement must not be read as verified exclusion of minors. Registration/profile controls and the minor-data response process must be reconciled before publication.</p>
-<p>If you believe a child has supplied information to Vanoa, contact <a href="mailto:support@vanoa.app">support@vanoa.app</a> without sending unnecessary details about the child.</p>
-</section>
-<section id="privacyrights">
-<h2>11. Your rights and requests</h2>
-<p>Depending on the law that applies to you, you may have rights to information about processing, access and a copy, correction, erasure, portability, restriction, objection, consent withdrawal and review of certain automated decisions. You can also raise a complaint with the competent data-protection authority. UAE governing law does not remove mandatory rights in another applicable jurisdiction.</p>
-<p>Use profile/settings controls to correct supported fields. Profile → Privacy and Data offers an export of selected records; this is not a representation that the ZIP covers every personal-data category. Ask support for data not included in the export.</p>
-<h3 id="request">How to make a request</h3>
-<p>Email <a href="mailto:support@vanoa.app">support@vanoa.app</a> with the request and the email associated with your account. We need to verify your identity or authority before disclosing or deleting account information. Do not send your password, sign-in code or authenticator code. An authorized representative may need to show authority to act. The <a href="delete-account.html#request">web deletion request route</a> does not require reinstalling Vanoa.</p>
-<p>If a request is refused, ask for the reason and, where applicable, appeal using the same contact or complain to your competent authority. Applicable statutory response periods continue to apply; an unapproved operational schedule does not suspend your rights.</p>
-<h3 id="uslaws">Other-market rights</h3>
-<p>Where applicable, US state rights can include knowing the categories and recipients of information, access, correction, deletion, a portable copy, non-discrimination, and limits or opt-outs for specified sensitive-data processing, sale, sharing, targeted advertising or significant profiling. These labels have legal definitions; ordinary vendor transfers are not automatically outside them. The release territories and statutory applicability must be established before final regional wording is approved.</p>
-<p>For the EEA, UK, Switzerland or other jurisdictions whose law applies, the available access, correction, erasure, objection, restriction, portability, withdrawal and complaint rights are not waived by these terms. Contact us for the appropriate request or supervisory-authority route.</p>
-</section>
-<section id="website">
-<h2>12. This website</h2>
-<p>These pages contain the full documents in static HTML. Reading does not require an account, app installation, JavaScript, analytics consent or an embedded third-party service. Fonts and visual assets are hosted with the site. The candidate pages contain no analytics scripts, advertising pixels or application cookies.</p>
-<p>The website host and delivery infrastructure still receive ordinary web requests, including IP addresses and request metadata. Their operational logging is distinct from cookies or tracking code in these pages. Following an external link or opening your email app involves that separate provider. The static email link opens a message; it does not send one, confirm delivery or prove that deletion occurred.</p>
-<h3 id="DNT">Browser privacy signals</h3>
-<p>The static pages do not implement a separate response to browser Do Not Track or similar signals. This does not waive any legally required opt-out treatment. Hosting and any future website features must be assessed separately before making a broader no-tracking claim.</p>
-</section>
-<section id="policyupdates">
-<h2>13. Changes and contact</h2>
-<p>This candidate has no effective date and does not replace an existing published policy. Before approval, the release, data practices and outstanding requirements must be reconciled. Approved future versions will identify their effective or revision date. Material changes should be brought to your attention through a prominent notice or direct communication, with renewed consent where required.</p>
-<p id="contact">Questions, corrections or privacy requests: <a href="mailto:support@vanoa.app">support@vanoa.app</a>. Also read the <a href="terms.html">Terms of Service</a> and <a href="delete-account.html">Delete Account guide</a>.</p>
-</section>
-</article></div>
-    </main>
-    <footer class="site-footer">
-      <div class="footer-main"><div><p><strong>Vanoa</strong><br>Operated by independent developers.</p><a href="mailto:support@vanoa.app">support@vanoa.app</a></div><nav class="footer-nav" aria-label="Legal documents"><a href="privacy.html" aria-current="page">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete-account.html">Delete Account</a></nav></div>
-      <p class="small">Review version · 4 October 2026 · Not an effective policy date.</p>
-      <p class="attribution">Drafting started with the <a href="https://app-privacy-policy-generator.nisrulz.com/">App Privacy Policy Generator</a> and was substantially adapted for Vanoa. <a href="assets/notices.txt">Asset and generator notices</a>.</p>
-    </footer>
-  </div>
+<p><strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>.</p>
+
+<h2>SUMMARY OF KEY POINTS</h2>
+<p><em>This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by using the table of contents below to find the section you are looking for.</em></p>
+<p><strong>What personal information do we process?</strong> When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use.</p>
+<p><strong>Do we process community food contributions or search quality telemetry?</strong> Yes, but strictly on an optional, opt-in basis. If you choose to contribute foods, we collect food information (name, portions, nutrition values) linked to your account, which is de-identified before review. Separately, if you opt in to search telemetry, we collect unmatched search queries and counts to find catalogue gaps. Both are separate scopes, switched off by default, and never required to use Vanoa.</p>
+<p><strong>Do we process any sensitive personal information?</strong> Some of the information we process — such as your health and fitness data — may be considered sensitive in certain jurisdictions. We process sensitive personal information when necessary with your consent or as otherwise permitted by applicable law.</p>
+<p><strong>Do we collect any information from third parties?</strong> Only where you choose it: health and fitness records from <strong>Health Connect</strong> on your phone if you connect it, basic profile details from <strong>Google</strong> if you sign in with Google, and subscription status from <strong>Google Play</strong> (through RevenueCat) if you buy Vanoa Plus. See section 1.</p>
+<p><strong>Do we use Health Connect?</strong> Yes, only if you connect it. We read and write the fitness data types listed in section 1 to keep your Vanoa logs and Health Connect in sync. We never sell Health Connect data or use it for advertising, and our use of it follows the Health Connect Permissions policy, including its Limited Use requirements.</p>
+<p><strong>Do we show ads or track you?</strong> No. Vanoa contains no advertising, no advertising identifiers and no third-party analytics or tracking tools, and we do not sell personal information.</p>
+<p><strong>How do we process your information?</strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so.</p>
+<p><strong>In what situations and with which parties do we share personal information?</strong> We may share information in specific situations and with specific third parties, described in the "When and With Whom Do We Share Your Personal Information?" section below.</p>
+<p><strong>How do we keep your information safe?</strong> We have adequate organisational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorised third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information.</p>
+<p><strong>What are your rights?</strong> Depending on where you are located geographically, applicable privacy law may mean you have certain rights regarding your personal information.</p>
+<p><strong>How do you exercise your rights?</strong> The easiest way to exercise your rights is by contacting us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>. We will consider and act upon any request in accordance with applicable data protection laws.</p>
+
+<h2 id="toc">TABLE OF CONTENTS</h2>
+<ol>
+<li><a href="#infocollect">What Information Do We Collect?</a></li>
+<li><a href="#infouse">How Do We Process Your Information?</a></li>
+<li><a href="#legalbases">What Legal Bases Do We Rely On to Process Your Personal Information?</a></li>
+<li><a href="#whoshare">When and With Whom Do We Share Your Personal Information?</a></li>
+<li><a href="#ai">Do We Offer Artificial Intelligence-Based Products?</a></li>
+<li><a href="#intltransfers">Is Your Information Transferred Internationally?</a></li>
+<li><a href="#inforetain">How Long Do We Keep Your Information?</a></li>
+<li><a href="#infosafe">How Do We Keep Your Information Safe?</a></li>
+<li><a href="#infominors">Do We Collect Information From Minors?</a></li>
+<li><a href="#privacyrights">What Are Your Privacy Rights?</a></li>
+<li><a href="#DNT">Controls for Do-Not-Track Features</a></li>
+<li><a href="#uslaws">Do United States Residents Have Specific Privacy Rights?</a></li>
+<li><a href="#policyupdates">Do We Make Updates to This Notice?</a></li>
+<li><a href="#contact">How Can You Contact Us About This Notice?</a></li>
+<li><a href="#request">How Can You Review, Update, or Delete the Data We Collect From You?</a></li>
+</ol>
+
+<h2 id="infocollect">1. WHAT INFORMATION DO WE COLLECT?</h2>
+<h3>Personal information you disclose to us</h3>
+<p><em><strong>In Short:</strong> We collect personal information that you provide to us.</em></p>
+<p>We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us.</p>
+<p><strong>Personal Information Provided by You.</strong> The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:</p>
+<ul>
+<li>names</li>
+<li>email addresses</li>
+<li>passwords</li>
+<li>profile photo</li>
+<li>bio / about text</li>
+<li>profile details you enter, such as date of birth, height, weight and fitness goals</li>
+<li>confirmation that you are 18 or older, and the versions of these documents you accepted</li>
+</ul>
+<p><strong>Sensitive Information.</strong> When necessary, with your consent or as otherwise permitted by applicable law, we process the following categories of sensitive information:</p>
+<ul>
+<li>health and fitness data you log or import: nutrition and meals, workouts and exercise, water intake, sleep, steps, weight, supplements and vitamins, and fasting</li>
+</ul>
+<p><strong>Purchase Data (Vanoa Plus).</strong> Vanoa offers an optional paid subscription, Vanoa Plus, sold through Google Play Billing. Google processes your payment; we never receive or store your card number, bank details or other payment-instrument information. To give you the features you paid for, we and our subscription-management provider, RevenueCat, receive and store purchase information: the product and plan you bought, purchase, renewal, cancellation and expiry dates, store transaction identifiers, the store environment, and your Vanoa account identifier. Privacy notices: <a href="https://policies.google.com/privacy" target="_blank">Google</a> and <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat</a>.</p>
+<p><strong>Information from Google Sign-In.</strong> If you choose to sign in with Google, Google shares basic profile information with us, such as your name and email address, so that we can create and secure your account. We do not receive your Google password.</p>
+<p><strong>Application Data.</strong> If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:</p>
+<ul>
+<li><em>Camera and Photos.</em> The camera is used to scan food barcodes, take food photos and supplement-label photos for the optional AI scanners (see section 5), and take or choose a profile photo. Barcodes are read on your phone, and the barcode number is then looked up in the Open Food Facts database. Scanner photos are processed and discarded; Vanoa does not store them. Your profile photo is stored with your account until you replace it or delete your account. Profile photos are served from a public web address, so anyone who has that address can view the image; do not use a photo you want to keep private.</li>
+<li><em>Approximate Location (optional).</em> If you allow it, Vanoa reads your approximate (coarse) location once to rank regional dishes and nearby foods higher in food search. Precise location and background location are never requested. The coordinate is rounded to about one kilometre and saved with your account, together with a city-level label (for example, "Mumbai, India") produced by your phone's built-in geocoding service. You can enter a city by hand instead, or turn location off in the app at any time. Vanoa never keeps a location history.</li>
+<li><em>Notifications, Reminders and Alarms.</em> With your permission, Vanoa shows reminders and sleep alarms. These are scheduled on your phone; we do not use a push-notification service or collect a push token. You can turn them off in the app or in your device settings.</li>
+<li><em>Technical and Security Data.</em> When the app checks for updates, our update provider (Expo) receives technical information such as your IP address, platform and app version. Your device's time zone is sent to our servers so that days and dates are calculated correctly. Some pictures in the app (for example, food and supplement photos) are stock images loaded from Unsplash and Pexels, which receive your IP address when an image loads. When you sign in, sign up or perform certain sensitive account actions, Cloudflare Turnstile receives technical signals such as your IP address and browser characteristics to confirm the request comes from a person, not a bot. We do not use these signals to profile you.</li>
+</ul>
+<p>You can change any of these permissions in your device's settings. We do not collect advertising identifiers and do not include third-party analytics or advertising tools in the app.</p>
+
+<h3 id="healthconnect">Health Connect (Android)</h3>
+<p><em><strong>In Short:</strong> If you connect Health Connect, Vanoa reads and writes the fitness data types listed below to keep your Vanoa logs and Health Connect in sync. Health Connect data is never sold, never used for advertising, and is handled according to the Health Connect Permissions policy, including its Limited Use requirements.</em></p>
+<p>Health Connect is an Android service that stores health and fitness data on your phone and lets you choose which apps can access it. Vanoa connects to it only if you choose to and only for the data types you grant in the Android permission screen. You can grant or revoke each data type at any time in Android Settings &rarr; Health Connect &rarr; App permissions &rarr; Vanoa, or from Vanoa's Health Sync screen.</p>
+<p><strong>Data Vanoa reads from Health Connect:</strong></p>
+<ul>
+<li>Steps</li>
+<li>Sleep sessions (including sleep stages, when your device records them)</li>
+<li>Weight</li>
+<li>Hydration (water intake)</li>
+<li>Nutrition</li>
+<li>Exercise sessions</li>
+<li>Heart rate and respiratory rate (optional). These are read only for the night shown on the Sleep screen, to display overnight vitals. They are processed on your phone and are not uploaded to our servers.</li>
+</ul>
+<p><strong>Data Vanoa writes to Health Connect:</strong> steps, sleep sessions, weight, hydration, nutrition and exercise sessions that you log in Vanoa, plus active calories burned for workouts you log. This lets other health apps you use see your Vanoa activity.</p>
+<p><strong>How we use it:</strong> data read from Health Connect is used only to show and track your fitness logs inside Vanoa: daily step, sleep, weight, water, nutrition and workout totals, history, trends and progress. Imported records (except heart rate and respiratory rate) are saved to your Vanoa account, like data you log by hand, so they are available on your other devices. You can delete them in the app or by deleting your account. Disconnecting Health Connect stops future syncing but does not delete records already imported.</p>
+<p><strong>Limited Use.</strong> Vanoa's use of information received from Health Connect will adhere to the <a href="https://support.google.com/googleplay/android-developer/answer/12991134" target="_blank">Health Connect Permissions policy</a>, including the Limited Use requirements. In particular, we:</p>
+<ul>
+<li>use Health Connect data only to provide and improve the user-facing fitness-tracking features described above;</li>
+<li>never sell Health Connect data, and never use or transfer it for advertising, ad targeting, credit-worthiness or lending decisions, or to data brokers or information resellers;</li>
+<li>transfer it only to our infrastructure provider (Supabase), to provide the features above, or where needed for security or to comply with law, or as part of a merger or acquisition with notice to you;</li>
+<li>do not allow humans to read it unless you ask us to (for example, in a support request), it is needed for security purposes such as investigating abuse, or it is required by law.</li>
+</ul>
+<p>Health Connect data is never sent to our AI provider.</p>
+<p>All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.</p>
+
+<h3>Community Food Catalogue Contributions (Opt-In Scope)</h3>
+<p><strong>What contribution collects, and on what basis (Clause P1).</strong> If you turn on catalogue contributions, the food information you create — its name, portion sizes and nutrition values — is stored and linked to your account so that you can withdraw it and so that it is deleted if you delete your account. The lawful basis is your consent, which you may withdraw at any time.</p>
+<p><strong>De-identification before review (Clause P2).</strong> Before a contribution is reviewed, it is separated from you. The version a reviewer sees contains the food information only — no account identifier, no name or email, no personal notes, and no date more precise than the month. A reviewer never sees who submitted anything.</p>
+
+<h3>Search Quality Telemetry (Opt-In Scope)</h3>
+<p><strong>Telemetry, as a separate choice (Clause P3).</strong> Separately from contributions, you may allow Vanoa to collect the food searches that returned no results, so we can find and fill gaps in the catalogue. This is a separate setting, switched off unless you turn it on, and it is not required in order to contribute foods. What is collected is the search term itself, in a simplified form, together with how many times it occurred. No date, no time, no order and nothing about your account is collected with it, so these records cannot be used to reconstruct what you ate or when you used the app.</p>
+<p><strong>Safeguards for search terms (Clause P4).</strong> A search term is only stored in readable form once enough separate users have searched for the same thing, so an unusual search made by one person is never stored as text. Below that point we keep a scrambled fingerprint of the term along with a count. That fingerprint protects the term if our database were ever copied by someone outside Vanoa, but it is not anonymous: Vanoa can read it. We describe it this way rather than calling it anonymous because it would not withstand a determined attempt by someone with access to our systems.</p>
+<h2 id="infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
+<p><em><strong>In Short:</strong> We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We process the personal information for the purposes listed below. We may also process your information for other purposes only with your prior explicit consent.</em></p>
+<p><strong>We process your personal information for a variety of reasons, depending on how you interact with our Services, including:</strong></p>
+<ul>
+<li><strong>To facilitate account creation and authentication and otherwise manage user accounts.</strong> We may process your information so you can create and log in to your account, as well as keep your account in working order.</li>
+<li><strong>To deliver and facilitate delivery of services to the user.</strong> We may process your information to provide you with the requested service.</li>
+<li><strong>To respond to user inquiries/offer support to users.</strong> We may process your information to respond to your inquiries and solve any potential issues you might have with the requested service.</li>
+<li><strong>To send administrative information to you.</strong> We may process your information to send you account and security messages, such as verification codes, password-reset codes and notices of changes to our terms and policies.</li>
+<li><strong>To sync with Health Connect.</strong> If you connect Health Connect, we process the data types listed in section 1 only to keep your Vanoa logs and Health Connect in sync and to show your fitness history and trends.</li>
+<li><strong>To provide the optional food and label scanners.</strong> We process barcodes and the photos you submit only to return product, nutrition or label information for you to review before saving (see section 5).</li>
+<li><strong>To provide and manage Vanoa Plus.</strong> We process purchase information to confirm your subscription, unlock the features you paid for, and handle renewals, cancellations and refunds.</li>
+<li><strong>To personalise food search.</strong> If you turn on location, we use your approximate location only to rank regional and nearby foods higher in search.</li>
+<li><strong>To protect our Services.</strong> We may process your information as part of our efforts to keep our Services safe and secure, including bot protection, rate limiting, fraud monitoring and prevention.</li>
+<li><strong>To save or protect an individual's vital interest.</strong> We may process your information when necessary to save or protect an individual's vital interest, such as to prevent harm.</li>
+<li><strong>To manage, review, and incorporate food contributions into our shared catalogue.</strong> When you opt in to food contributions, we process the food names, portions, and nutrition values you submit (de-identified prior to review) to expand and improve the Vanoa food catalogue for all users.</li>
+<li><strong>To identify and resolve catalogue gaps through search quality telemetry.</strong> When you opt in to search telemetry, we collect and analyse unmatched food search terms and their occurrence counts to determine which missing foods to prioritize adding to the catalogue.</li>
+</ul>
+
+<h2 id="legalbases">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?</h2>
+<p><em><strong>In Short:</strong> We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e. legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfil our contractual obligations, to protect your rights, or to fulfil our legitimate business interests.</em></p>
+<p><strong><u>If you are located in the EU or UK, this section applies to you.</u></strong></p>
+<p>The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:</p>
+<ul>
+<li><strong>Consent.</strong> We may process your information if you have given us permission (i.e. consent) to use your personal information for a specific purpose. You can withdraw your consent at any time. See "Withdrawing your consent" below.
+<p><strong>Separate Consent Scopes for Contributions and Telemetry:</strong> Community food catalogue contributions and search quality telemetry are maintained as two completely separate, independent consent scopes:</p>
+<ul>
+<li><strong>Food Catalogue Contributions:</strong> Processed based on your affirmative consent to our content contribution licence. This allows your created food data to be reviewed (in de-identified form) and merged into the shared catalogue.</li>
+<li><strong>Search Quality Telemetry:</strong> Processed based on your separate affirmative consent to collect unmatched search terms and counts to find catalogue gaps.</li>
+</ul>
+<p>Both scopes are <strong>switched off by default</strong>. Neither is a condition of using Vanoa. A user who wants to improve the catalogue is not required to accept telemetry as the price. You may grant, decline, or withdraw consent for either feature independently in Settings at any time.</p>
+</li>
+<li><strong>Explicit Consent for Health Data.</strong> Health and fitness data is processed on the basis of your explicit consent, given when you create your account and when you grant each Health Connect permission. You can withdraw it by revoking permissions, deleting the data, or deleting your account.</li>
+<li><strong>Performance of a Contract.</strong> We may process your personal information when we believe it is necessary to fulfil our contractual obligations to you, including providing our Services or at your request prior to entering into a contract with you.</li>
+<li><strong>Legitimate Interests.</strong> We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests and those interests do not outweigh your interests and fundamental rights and freedoms. For example, we may process your personal information for some of the purposes described in order to:
+<ul>
+<li>Keep accounts secure, detect bots and abuse, and prevent fraudulent activities</li>
+<li>Diagnose and fix problems with the Services</li>
+</ul>
+</li>
+<li><strong>Legal Obligations.</strong> We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.</li>
+<li><strong>Vital Interests.</strong> We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.</li>
+</ul>
+<p><strong><u><em>If you are located in Canada, this section applies to you.</em></u></strong></p>
+<p>We may process your information if you have given us specific permission (i.e. express consent) to use your personal information for a specific purpose, or in situations where your permission can be inferred (i.e. implied consent). You can withdraw your consent at any time.</p>
+<p>In some exceptional cases, we may be legally permitted under applicable law to process your information without your consent, including, for example:</p>
+<ul>
+<li>If collection is clearly in the interests of an individual and consent cannot be obtained in a timely way</li>
+<li>For investigations and fraud detection and prevention</li>
+<li>For business transactions provided certain conditions are met</li>
+<li>If it is contained in a witness statement and the collection is necessary to assess, process, or settle an insurance claim</li>
+<li>For identifying injured, ill, or deceased persons and communicating with next of kin</li>
+<li>If we have reasonable grounds to believe an individual has been, is, or may be victim of financial abuse</li>
+<li>If it is reasonable to expect collection and use with consent would compromise the availability or accuracy of the information and the collection is reasonable for purposes related to investigating a breach of an agreement or a contravention of the laws of Canada or a province</li>
+<li>If disclosure is required to comply with a subpoena, warrant, court order, or rules of the court relating to the production of records</li>
+<li>If it was produced by an individual in the course of their employment, business, or profession and the collection is consistent with the purposes for which the information was produced</li>
+<li>If the collection is solely for journalistic, artistic, or literary purposes</li>
+<li>If the information is publicly available and is specified by the regulations</li>
+<li>We may disclose de-identified information for approved research or statistics projects, subject to ethics oversight and confidentiality commitments</li>
+</ul>
+
+<h2 id="whoshare">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
+<p><em><strong>In Short:</strong> We may share information in specific situations described in this section and/or with the following third parties.</em></p>
+<p><strong>We do not sell your personal information, and we do not share it with advertisers or data brokers.</strong> We share it only with the service providers below, each limited to what it needs to perform its service for us:</p>
+<table style="width:100%; border-collapse: collapse;" border="1" cellpadding="8">
+<thead>
+<tr><th align="left">Provider</th><th align="left">What it receives</th><th align="left">Why</th></tr>
+</thead>
+<tbody>
+<tr><td>Supabase (servers in Mumbai, India)</td><td>Account, profile, health and fitness logs, approximate location (if enabled), profile photo, purchase status</td><td>Backend: database, sign-in, file storage and server functions</td></tr>
+<tr><td>OpenRouter, and the AI model providers it routes to</td><td>Food photos and supplement-label photos you submit to a scanner</td><td>AI scanning, routed only to zero-data-retention endpoints (section 5)</td></tr>
+<tr><td>Google Play Billing</td><td>Your purchase (Google processes your payment)</td><td>Selling and managing Vanoa Plus subscriptions</td></tr>
+<tr><td>RevenueCat</td><td>Vanoa account identifier, store purchase and subscription records</td><td>Validating purchases and reporting subscription status</td></tr>
+<tr><td>Cloudflare (Turnstile)</td><td>IP address and browser/device signals</td><td>Confirming sign-ins and sensitive account actions come from a person, not a bot</td></tr>
+<tr><td>Expo (EAS Update)</td><td>IP address, platform and app version</td><td>Delivering app updates</td></tr>
+<tr><td>Unsplash and Pexels</td><td>Your IP address and the stock image requested (not linked to your account)</td><td>Loading stock pictures shown in the app</td></tr>
+<tr><td>Open Food Facts</td><td>The barcode number you scan and your IP address (not linked to your account)</td><td>Looking up product and nutrition information</td></tr>
+<tr><td>Vercel</td><td>The sign-in link you open from an email, and your IP address</td><td>Hosting the web page that completes email sign-in links</td></tr>
+<tr><td>GitHub Pages</td><td>IP address when you visit vanoa.app</td><td>Hosting this website</td></tr>
+</tbody>
+</table>
+<p>If you sign in with Google, Google also processes the sign-in under its own privacy policy. Health Connect runs on your phone and is controlled by you; we do not send your data to Google through it, except the records you allow Vanoa to write back to Health Connect on your device.</p>
+<p>We may also disclose information where required by law, or to protect the rights, safety and security of our users and the Services.</p>
+<p>We also may need to share your personal information in the following situation:</p>
+<ul>
+<li><strong>Business Transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+</ul>
+<p><strong>Who Has Access to Food Contributions and Telemetry (Clause P6).</strong> Contributions are reviewed internally by Vanoa. They are not sold, shared with advertisers, or given to third parties. Reviewers work only with the de-identified version described above (food information only — no account identifier, no name or email, no personal notes, and no date more precise than the month). Search quality telemetry records are retained internally by Vanoa solely to find and fill catalogue gaps, and are never sold or shared with advertisers or third parties.</p>
+
+<h2 id="ai">5. DO WE OFFER ARTIFICIAL INTELLIGENCE-BASED PRODUCTS?</h2>
+<p><strong><em>In Short:</em></strong><em> Vanoa has two optional AI scanners: a food-photo scanner and a supplement-label scanner. The photos you submit are sent to an AI model through OpenRouter, routed only to zero-data-retention endpoints, and are not stored by Vanoa.</em></p>
+<p><strong>What the AI features are.</strong> Vanoa uses AI only in two optional camera features:</p>
+<ul>
+<li><strong>Food-photo scanner:</strong> estimates what a photographed meal contains and its approximate calories and nutrients.</li>
+<li><strong>Supplement-label scanner:</strong> transcribes the facts panel of a supplement label into structured rows.</li>
+</ul>
+<p>Barcode scanning is not AI; it looks up the barcode in the Open Food Facts database. Vanoa has no AI chat or AI coach.</p>
+<p><strong>How your photo is processed.</strong> When you use a scanner, the photo is sent from your phone to our server function, which forwards it to an AI model through OpenRouter (our AI service provider) and returns the result to you. Every request is configured so that OpenRouter routes it only to model endpoints marked "zero data retention", and no fallback to other endpoints is configured. Vanoa does not save the photo in our database or file storage, and does not log its contents. The request sent to OpenRouter contains only the photo and the scanning instructions, not your name, email, account identifier or health logs. We keep a count of scans per account to enforce usage limits.</p>
+<p><strong>Your control.</strong> The scanners are optional. Results are estimates that you review and can edit before anything is saved to your logs, and they are not medical or dietary advice. If you prefer not to use AI, simply do not use the scanners; you can log food by search, barcode or by hand.</p>
+<p>We do not use your photos or data to train AI models.</p>
+
+<h2 id="intltransfers">6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</h2>
+<p><em><strong>In Short:</strong> We may transfer, store, and process your information in countries other than your own.</em></p>
+<p>Our primary servers (Supabase) are located in Mumbai, India. Regardless of your location, please be aware that your information may be transferred to, stored by, and processed by us in our facilities and in the facilities of the third parties with whom we may share your personal information (see "When and With Whom Do We Share Your Personal Information?" above), including facilities in the United States and other countries.</p>
+<p>If you are a resident in the European Economic Area (EEA), United Kingdom (UK), or Switzerland, then these countries may not necessarily have data protection laws or other similar laws as comprehensive as those in your country. However, we will take all necessary measures to protect your personal information in accordance with this Privacy Notice and applicable law.</p>
+<p><strong>Transfer safeguards:</strong> Where personal information from the EEA, UK or Switzerland is transferred to a country without an adequacy decision, we rely on the transfer safeguards in our service providers' data processing terms, such as the European Commission's Standard Contractual Clauses, where those providers offer them. You may contact us for more information.</p>
+
+<h2 id="inforetain">7. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
+<p><em><strong>In Short:</strong> We keep your information for as long as necessary to fulfil the purposes outlined in this Privacy Notice unless otherwise required by law.</em></p>
+<p>We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than the period of time in which users have an account with us.</p>
+<p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymise such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
+<p><strong>Specific retention periods.</strong> Account, profile and health logs (including records imported from Health Connect) are kept until you delete them or delete your account. Scanner photos are not stored. Approximate location is kept until you turn location off, change it, or delete your account. Purchase records are kept as long as needed to manage your subscription and meet legal, tax and accounting obligations. When you delete your account, we delete your data from our active systems within 30 days; copies in routine database backups expire within a further 30 days.</p>
+<p><strong>Retention of Contributions and Search Telemetry (Clause P5).</strong> Contributions that are not adopted into the catalogue are deleted after 180 days. Search-gap records are kept as running totals only and are not tied to any individual, so there is nothing individual to delete.</p>
+<p><strong>Surviving Account Deletion:</strong> If you delete your account, everything belonging to you is deleted, including any contributions you have submitted and any information linking you to them. Catalogue entries that were created or improved using contributions from several users remain in the catalogue — those entries are Vanoa's own records and contain no information that identifies you or can be traced back to you. Where a catalogue entry drew on your contribution, it is recalculated without it.</p>
+
+<h2 id="infosafe">8. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+<p><em><strong>In Short:</strong> We aim to protect your personal information through a system of organisational and technical security measures.</em></p>
+<p>We have implemented appropriate and reasonable technical and organisational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorised third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.</p>
+
+<h2 id="infominors">9. DO WE COLLECT INFORMATION FROM MINORS?</h2>
+<p><em><strong>In Short:</strong> We do not knowingly collect data from or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction.</em></p>
+<p>We do not knowingly collect, solicit data from, or market to children under 18 years of age or the equivalent age as specified by law in your jurisdiction, nor do we knowingly sell such personal information. By using the Services, you represent that you are at least 18 or the equivalent age as specified by law in your jurisdiction. Vanoa is not intended for children and does not offer accounts managed by a parent or guardian. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>.</p>
+
+<h2 id="privacyrights">10. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
+<p><em><strong>In Short:</strong> Depending on your state of residence in the US or in some regions, such as the European Economic Area (EEA), United Kingdom (UK), Switzerland, and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time, depending on your country, province, or state of residence.</em></p>
+<p>In some regions (like the EEA, UK, Switzerland, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; (iv) if applicable, to data portability; and (v) not to be subject to automated decision-making. If a decision that produces legal or similarly significant effects is made solely by automated means, we will inform you, explain the main factors, and offer a simple way to request human review. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us using the contact details provided in "How Can You Contact Us About This Notice?" below.</p>
+<p>We will consider and act upon any request in accordance with applicable data protection laws.</p>
+<p>If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your <a href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm" target="_blank">Member State data protection authority</a> or <a href="https://ico.org.uk/make-a-complaint/data-protection-complaints/data-protection-complaints/" target="_blank">UK data protection authority</a>.</p>
+<p>If you are located in Switzerland, you may contact the <a href="https://www.edoeb.admin.ch/edoeb/en/home.html" target="_blank">Federal Data Protection and Information Commissioner</a>.</p>
+<p><strong><u>Withdrawing your consent:</u></strong> If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us using the contact details provided in "How Can You Contact Us About This Notice?" below.</p>
+<p><em>Withdrawing Consent for Contributions or Telemetry:</em> You can withdraw your consent for food catalogue contributions and/or search quality telemetry at any time by toggling them off in the app under Settings (Profile &rarr; Privacy and Data). Turning off contributions stops future contributions and deletes any submission not yet adopted into the catalogue (see Terms of Service, clause T6). Turning off search telemetry immediately stops the collection of unmatched search queries from your device.</p>
+<p>However, please note that this will not affect the lawfulness of the processing before its withdrawal, nor will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.</p>
+<p><strong><u>Marketing:</u></strong> We do not send marketing or promotional emails. We send only service messages needed to run your account, such as verification codes, security notices and policy updates.</p>
+<h3>Account Information</h3>
+<p>If you would at any time like to review or change the information in your account or terminate your account, you can:</p>
+<ul>
+<li>Log in to your account settings and update your user account.</li>
+<li>Download a copy of your data (a readable ZIP archive) in the app under Profile &rarr; Privacy and Data.</li>
+<li>Delete your account and data in the app under Profile &rarr; Privacy and Data.</li>
+<li>Revoke Health Connect access at any time in Android Settings &rarr; Health Connect.</li>
+<li>Email us at <a href="mailto:support@vanoa.app">support@vanoa.app</a> with your account deletion request, and we will delete your account and associated data within 30 days.</li>
+</ul>
+<p>You can also request deletion of your account and data at <a href="/delete-account.html">vanoa.app/delete-account.html</a>.</p>
+<p>Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. We keep only purchase records needed for legal, tax and accounting obligations, as described in section 7, and copies in routine database backups expire within a further 30 days.</p>
+<p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>.</p>
+
+<h2 id="DNT">11. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
+<p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognising and implementing DNT signals has been finalised. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.</p>
+<p>California law requires us to let you know how we respond to web browser DNT signals. Because there currently is not an industry or legal standard for recognising or honouring DNT signals, we do not respond to them at this time.</p>
+
+<h2 id="uslaws">12. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
+<p><em><strong>In Short:</strong> If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.</em></p>
+
+<h3>Categories of Personal Information We Collect</h3>
+<p>The table below shows the categories of personal information we have collected in the past twelve (12) months. The table includes illustrative examples of each category and does not reflect the personal information we collect from you. For a comprehensive inventory of all personal information we process, please refer to "What Information Do We Collect?" above.</p>
+
+<table style="width:100%; border-collapse: collapse;" border="1" cellpadding="8">
+<thead>
+<tr><th align="left">Category</th><th align="left">Examples</th><th align="center">Collected</th></tr>
+</thead>
+<tbody>
+<tr><td>A. Identifiers</td><td>Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</td><td align="center">YES</td></tr>
+<tr><td>B. Personal information as defined in the California Customer Records statute</td><td>Name, contact information, education, employment, employment history, and financial information</td><td align="center">YES</td></tr>
+<tr><td>C. Protected classification characteristics under state or federal law</td><td>Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data</td><td align="center">YES</td></tr>
+<tr><td>D. Commercial information</td><td>Subscription purchase history and status (we do not receive card or payment-instrument details)</td><td align="center">YES</td></tr>
+<tr><td>E. Biometric information</td><td>Fingerprints and voiceprints</td><td align="center">NO</td></tr>
+<tr><td>F. Internet or other similar network activity</td><td>Food searches made in the app, and, only if you opt in to search telemetry, unmatched search terms and counts (not linked to your account)</td><td align="center">YES</td></tr>
+<tr><td>G. Geolocation data</td><td>Approximate device location, rounded to about one kilometre (optional; precise location is never collected)</td><td align="center">YES</td></tr>
+<tr><td>H. Audio, electronic, sensory, or similar information</td><td>Images and audio, video, or call recordings created in connection with our business activities</td><td align="center">YES</td></tr>
+<tr><td>I. Professional or employment-related information</td><td>Business contact details in order to provide you our Services at a business level, or job title, work history, and professional qualifications if you apply for a job with us</td><td align="center">NO</td></tr>
+<tr><td>J. Education Information</td><td>Student records and directory information</td><td align="center">NO</td></tr>
+<tr><td>K. Inferences drawn from collected personal information</td><td>Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual's preferences and characteristics</td><td align="center">YES</td></tr>
+<tr><td>L. Sensitive personal information</td><td>Account login information and health data</td><td align="center">YES</td></tr>
+</tbody>
+</table>
+
+<p>We only collect sensitive personal information, as defined by applicable privacy laws or the purposes allowed by law or with your consent. Sensitive personal information may be used, or disclosed to a service provider or contractor, for additional, specified purposes. You may have the right to limit the use or disclosure of your sensitive personal information.</p>
+<p>We may also collect other personal information outside of these categories through instances where you interact with us in person, online, or by phone or mail in the context of:</p>
+<ul>
+<li>Receiving help through our customer support channels;</li>
+<li>Facilitation in the delivery of our Services and to respond to your inquiries.</li>
+</ul>
+<p>We will use and retain the collected personal information as needed to provide the Services or as long as the user has an account with us, for all categories listed above.</p>
+
+<h3>Sources of Personal Information</h3>
+<p>Learn more about the sources of personal information we collect in "What Information Do We Collect?" above.</p>
+
+<h3>How We Use and Share Personal Information</h3>
+<p>Learn more about how we use your personal information in "How Do We Process Your Information?" above.</p>
+<p><strong>Will your information be shared with anyone else?</strong> We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Learn more in "When and With Whom Do We Share Your Personal Information?" above.</p>
+<p>We have not sold or shared any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. We have disclosed the following categories of personal information to third parties for a business or commercial purpose in the preceding twelve (12) months:</p>
+<ul>
+<li>Category A. Identifiers</li>
+<li>Category B. Personal information as defined in the California Customer Records law</li>
+<li>Category D. Commercial information</li>
+<li>Category G. Geolocation data</li>
+<li>Category L. Sensitive personal information</li>
+</ul>
+<p>The categories of third parties to whom we disclosed personal information for a business or commercial purpose can be found under "When and With Whom Do We Share Your Personal Information?" above.</p>
+
+<h3>Your Rights</h3>
+<p>You have rights under certain US state data protection laws. However, these rights are not absolute, and in certain cases, we may decline your request as permitted by law. These rights include:</p>
+<ul>
+<li><strong>Right to know</strong> whether or not we are processing your personal data</li>
+<li><strong>Right to access</strong> your personal data</li>
+<li><strong>Right to correct</strong> inaccuracies in your personal data</li>
+<li><strong>Right to request</strong> the deletion of your personal data</li>
+<li><strong>Right to obtain a copy</strong> of the personal data you previously shared with us</li>
+<li><strong>Right to non-discrimination</strong> for exercising your rights</li>
+<li><strong>Right to opt out</strong> of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California's privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ("profiling")</li>
+</ul>
+<p>Depending upon the state where you live, you may also have the following rights:</p>
+<ul>
+<li>Right to access the categories of personal data being processed (as permitted by applicable law, including the privacy law in Minnesota)</li>
+<li>Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in California, Delaware, and Maryland)</li>
+<li>Right to obtain a list of specific third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in Minnesota and Oregon)</li>
+<li>Right to obtain a list of third parties to which we have sold personal data (as permitted by applicable law, including the privacy law in Connecticut)</li>
+<li>Right to review, understand, question, and depending on where you live, correct how personal data has been profiled (as permitted by applicable law, including the privacy law in Connecticut and Minnesota)</li>
+<li>Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including the privacy law in California)</li>
+<li>Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including the privacy law in Florida)</li>
+</ul>
+
+<h3>How to Exercise Your Rights</h3>
+<p>To exercise these rights, you can contact us by emailing us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>, or by referring to the contact details at the bottom of this document.</p>
+<p>Under certain US state data protection laws, you can designate an authorised agent to make a request on your behalf. We may deny a request from an authorised agent that does not submit proof that they have been validly authorised to act on your behalf in accordance with applicable laws.</p>
+
+<h3>Request Verification</h3>
+<p>Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. We will only use personal information provided in your request to verify your identity or authority to make the request. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes.</p>
+<p>If you submit the request through an authorised agent, we may need to collect additional information to verify your identity before processing your request, and the agent will need to provide a written and signed permission from you to submit such request on your behalf.</p>
+
+<h3>Appeals</h3>
+<p>Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+
+<h3>California "Shine The Light" Law</h3>
+<p>California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact details provided in "How Can You Contact Us About This Notice?" below.</p>
+
+<h2 id="policyupdates">13. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+<p><em><strong>In Short:</strong> Yes, we will update this notice as necessary to stay compliant with relevant laws.</em></p>
+<p>We may update this Privacy Notice from time to time. The updated version will be indicated by an updated "Last updated" date at the top of this Privacy Notice. If we make material changes to this Privacy Notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this Privacy Notice frequently to be informed of how we are protecting your information.</p>
+
+<h2 id="contact">14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+<p>If you have questions or comments about this notice, you may email us at <a href="mailto:support@vanoa.app">support@vanoa.app</a> or contact us by post at:</p>
+<p><strong>Vanoa</strong><br>
+Dubai, United Arab Emirates</p>
+
+<h2 id="request">15. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
+<p>Based on the applicable laws of your country or state of residence in the US, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please email us at <a href="mailto:support@vanoa.app">support@vanoa.app</a>.</p>
+
 </body>
 </html>
